@@ -1,0 +1,11 @@
+<?xml version='1.0'?>
+<launch>
+
+<!-- Launch all rover nodes -->
+
+<!--
+<node pkg="pkg_name" name="node_name" type="script_name" respawn="false" output="screen">
+	</node>
+-->
+
+</launch>
