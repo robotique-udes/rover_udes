@@ -8,4 +8,6 @@
 	</node>
 -->
 
+<include file="$(find rover_control)/launch/control.launch"/>
+
 </launch>
