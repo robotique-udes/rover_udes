@@ -9,5 +9,6 @@
 -->
 
 <include file="$(find rover_control)/launch/control.launch"/>
+<include file="$(find rover_sensors)/launch/sensors.launch"/>
 
 </launch>
