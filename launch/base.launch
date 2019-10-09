@@ -6,5 +6,6 @@
 <include file="$(find rover_control)/launch/watchdog.launch"/>
 <include file="$(find rover_control)/launch/joy.launch"/>
 <include file="$(find rover_gui)/launch/ui.launch"/>
+<include file="$(find rover_sensors)/launch/panorama.launch"/>
 
 </launch>
