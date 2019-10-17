@@ -8,7 +8,9 @@
 	</node>
 -->
 
+<include file="$(find rover_control)/launch/watchdog.launch"/>
 <include file="$(find rover_control)/launch/control.launch"/>
-<include file="$(find rover_sensors)/launch/sensors.launch"/>
+<include file="$(find rover_drivers)/launch/sensors.launch"/>
+<include file="$(find rover_cam)/launch/panorama.launch"/>
 
 </launch>
