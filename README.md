@@ -10,5 +10,7 @@ Launch file for nodes that run on rover
 
 ## Jetson's infos
 Name: RobotiqueUdeS
+>
 Username: robotiqueudes
+>
 Password: roverudes
