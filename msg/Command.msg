@@ -1,3 +1,3 @@
 bool is_active
-float32 linear
-float32 angular
+float32 right
+float32 left
