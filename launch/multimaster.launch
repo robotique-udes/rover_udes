@@ -1,0 +1,18 @@
+<?xml version='1.0'?>
+<launch>
+    <arg name="melodic" default="false" />
+
+    <group unless="$(arg melodic)">
+        <node pkg="fkie_master_discovery" name="master_discovery" type="master_discovery">
+            <param name="mcast_group" value="224.0.0.1" />
+        </node>
+        <node pkg="fkie_master_sync" name="master_sync" type="master_sync" />
+    </group>
+    <group if="$(arg melodic)">
+        <node pkg="master_discovery_fkie" name="master_discovery" type="master_discovery">
+            <param name="mcast_group" value="224.0.0.1" />
+        </node>
+        <node pkg="master_sync_fkie" name="master_sync" type="master_sync" />
+    </group>
+
+</launch>
