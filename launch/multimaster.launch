@@ -1,14 +1,13 @@
 <?xml version='1.0'?>
 <launch>
-    <arg name="melodic" default="false" />
 
-    <group unless="$(arg melodic)">
+    <group if="$(eval env('ROS_DISTRO') == 'noetic')">
         <node pkg="fkie_master_discovery" name="master_discovery" type="master_discovery">
             <param name="mcast_group" value="224.0.0.1" />
         </node>
         <node pkg="fkie_master_sync" name="master_sync" type="master_sync" />
     </group>
-    <group if="$(arg melodic)">
+    <group if="$(eval env('ROS_DISTRO') == 'melodic')">
         <node pkg="master_discovery_fkie" name="master_discovery" type="master_discovery">
             <param name="mcast_group" value="224.0.0.1" />
         </node>
